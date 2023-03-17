@@ -6,6 +6,7 @@ describe('slider', () => {
       slidesToScroll: 3,
       slidesToShow: 3,
       loop: false,
+      fixedSlides: false,
     })
 
     expect(slider.totalSlides).toBe(7)
@@ -15,6 +16,7 @@ describe('slider', () => {
       slidesToScroll: 3,
       slidesToShow: 3,
       loop: false,
+      fixedSlides: false,
     })
 
     expect(slider.isStatic).toBe(false)
@@ -27,6 +29,7 @@ describe('slider', () => {
       slidesToScroll: 3,
       slidesToShow: 3,
       loop: true,
+      fixedSlides: false,
     })
 
     expect(slider.totalSlides).toBe(7)
@@ -36,6 +39,7 @@ describe('slider', () => {
       slidesToScroll: 3,
       slidesToShow: 3,
       loop: true,
+      fixedSlides: false,
     })
 
     expect(slider.isStatic).toBe(false)

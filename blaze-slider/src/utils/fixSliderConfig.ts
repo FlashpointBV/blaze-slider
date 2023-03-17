@@ -6,11 +6,12 @@ import { DEV } from '../constants'
  * - config.slidesToShow greater than totalSlides
  * - config.slidesToScroll greater than config.slidesToShow which skips showing certain slides
  * - config.slidesToScroll too high such that it causes glitches
+ * - config.fixedSlides doesn't fall back to the total amount of slides
  */
 export function fixSliderConfig(slider: Automata) {
-  const { slidesToScroll, slidesToShow } = slider.config
+  const { slidesToScroll, slidesToShow, fixedSlides } = slider.config
   const { totalSlides, config } = slider
-  if (totalSlides < slidesToShow) {
+  if (totalSlides < slidesToShow && !fixedSlides) {
     if (DEV) {
       console.warn(
         'slidesToShow can not be larger than number of slides. Setting slidesToShow = totalSlides instead.'

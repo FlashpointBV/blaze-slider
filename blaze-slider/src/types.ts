@@ -4,6 +4,7 @@ export type AutomataConfig = {
   loop: boolean
   slidesToShow: number
   slidesToScroll: number
+  fixedSlides: boolean
 }
 
 /** media specific configuration for blaze-slider */

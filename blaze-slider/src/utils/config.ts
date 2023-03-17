@@ -5,6 +5,7 @@ export const defaultConfig: MediaConfig = {
   slideGap: '20px',
   slidesToScroll: 1,
   slidesToShow: 1,
+  fixedSlides: false,
   // behavior
   loop: true,
   // autoplay

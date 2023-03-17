@@ -6,6 +6,7 @@ describe('loop: true', () => {
       slidesToShow: 3,
       slidesToScroll: 3,
       loop: true,
+      fixedSlides: false,
     })
 
     // 0: 0 1 2
@@ -55,6 +56,7 @@ describe('loop: true', () => {
       slidesToShow: 3,
       slidesToScroll: 2,
       loop: true,
+      fixedSlides: false,
     })
 
     // 0: 0 1 2
@@ -116,6 +118,7 @@ describe('loop: true', () => {
       slidesToShow: 3,
       slidesToScroll: 2,
       loop: true,
+      fixedSlides: false,
     })
 
     // 0: 0 1 2
@@ -165,6 +168,7 @@ describe('loop: true', () => {
       slidesToShow: 3,
       slidesToScroll: 1,
       loop: true,
+      fixedSlides: false,
     })
 
     expect(slider.states.length).toBe(1)
@@ -192,6 +196,7 @@ describe('loop: true', () => {
       slidesToShow: 4,
       slidesToScroll: 1,
       loop: true,
+      fixedSlides: false,
     })
 
     expect(slider.states.length).toBe(1)

@@ -1,10 +1,16 @@
 {
   "type": "module",
-  "name": "blaze-slider",
-  "version": "1.9.1",
+  "name": "@flashpointbv/blaze-slider",
+  "version": "1.0.1",
   "description": "Blazing Fast Slider For High Performance Web",
   "main": "dist/blaze-slider.cjs.js",
   "module": "dist/blaze-slider.esm.js",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "url": "git://github.com/FlashpointBV/blaze-slider.git"
+  },
   "exports": {
     ".": {
       "browser": {

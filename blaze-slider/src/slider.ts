@@ -106,6 +106,17 @@ export class BlazeSlider extends Automata {
     scrollPrev(this, slideCount)
   }
 
+  slideTo(index: number) {
+    const { stateIndex } = this
+    const difference = Math.abs(index - stateIndex)
+
+    if (stateIndex < index) {
+      this.next(difference)
+    } else {
+      this.prev(difference)
+    }
+  }
+
   stopAutoplay() {
     clearInterval(this.autoplayTimer)
   }

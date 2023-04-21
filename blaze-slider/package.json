@@ -1,7 +1,7 @@
 {
   "type": "module",
   "name": "@flashpointbv/blaze-slider",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Blazing Fast Slider For High Performance Web",
   "main": "dist/blaze-slider.cjs.js",
   "module": "dist/blaze-slider.esm.js",
@@ -72,5 +72,16 @@
     "rollup-plugin-ts": "^3.1.1",
     "ts-jest": "^27.1.2",
     "typescript": "^4.9.4"
-  }
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/FlashpointBV/blaze-slider.git"
+  },
+  "bugs": {
+    "url": "https://github.com/FlashpointBV/blaze-slider/issues"
+  },
+  "homepage": "https://github.com/FlashpointBV/blaze-slider#readme"
 }

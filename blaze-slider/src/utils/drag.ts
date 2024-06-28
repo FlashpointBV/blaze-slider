@@ -10,6 +10,14 @@ export function handlePointerDown(
   this: Track,
   downEvent: PointerEvent | TouchEvent
 ) {
+  const targetEl = downEvent.target as HTMLElement
+  if (
+    targetEl.tagName === 'SELECT' ||
+    targetEl.tagName === 'INPUT' ||
+    targetEl.tagName === 'TEXTAREA'
+  )
+    return
+
   const track = this
   const slider = track.slider
   if (slider.isTransitioning) return
